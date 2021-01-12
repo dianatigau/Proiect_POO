@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\singletone-uri">
+      <UniqueIdentifier>{4423d1ba-7071-423d-8bd2-69d24a402210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interfete">
+      <UniqueIdentifier>{19c9f2e7-36a0-4f92-90d9-1aa526e1760c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Genuri">
+      <UniqueIdentifier>{412fdbd1-7753-46af-a228-763260d029ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Genuri">
+      <UniqueIdentifier>{fb32e67b-c893-45c0-8e89-f4ebd2df85e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\singletone-uri">
+      <UniqueIdentifier>{c05d2349-77a5-4e11-a73c-90c027fe4ae6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CSali.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CFilm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBilet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CActiune.cpp">
+      <Filter>Source Files\Genuri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CAnimatie.cpp">
+      <Filter>Source Files\Genuri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CManagerSala.cpp">
+      <Filter>Source Files\singletone-uri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CProgramCinema.cpp">
+      <Filter>Source Files\singletone-uri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CID.cpp">
+      <Filter>Source Files\singletone-uri</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CBilet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CFilm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CSali.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IFilm.h">
+      <Filter>Header Files\Interfete</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CAnimatie.h">
+      <Filter>Header Files\Genuri</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CActiune.h">
+      <Filter>Header Files\Genuri</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CManagerSala.h">
+      <Filter>Header Files\singletone-uri</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CProgramCinema.h">
+      <Filter>Header Files\singletone-uri</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CID.h">
+      <Filter>Header Files\singletone-uri</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
