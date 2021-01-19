@@ -38,7 +38,7 @@ unsigned int CID::getID()
 {
 	last_ID++;
 	ofstream f;
-	f.open("id.bin"); 
+	f.open("id.bin");
 	f << last_ID;
 	return last_ID;
 }

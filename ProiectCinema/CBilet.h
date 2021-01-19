@@ -10,9 +10,9 @@ private:
 	char* nume_film;
 	int ID;
 public:
-	CBilet(int col_loc, int linie_loc, int sala, char* ora_rularii, char* nume_film);
+	CBilet(int col_loc, int linie_loc, int sala, char* ora_rularii,char*nume_film);
 	void print_bilet();
-	friend std::ostream& operator<<(std::ostream& os, CBilet bilet); 
+	friend std::ostream& operator<<(std::ostream& os,CBilet bilet);
 };
 
-std::ostream& operator<<(std::ostream& os, CBilet bilet);
+std::ostream& operator<<(std::ostream& os,CBilet bilet);

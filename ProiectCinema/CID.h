@@ -8,13 +8,12 @@ public:
 	static void destroy_instance();
 	unsigned int getID();
 
-private:     
+private:
 	CID();
 	~CID();
-	CID(int id); 
+	CID(int id);
 
 	static CID* instance;
 	unsigned int last_ID;
-
 };
 

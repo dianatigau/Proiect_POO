@@ -14,7 +14,7 @@ CSali::CSali(int nr_sala)
 }
 
 
-void CSali::select_loc(int& linie, int& coloana)
+void CSali::select_loc(int &linie, int &coloana)
 {
 	while (true)
 	{
@@ -23,17 +23,17 @@ void CSali::select_loc(int& linie, int& coloana)
 			this->nr_locuri_disponibile--;
 			this->locuri[linie][coloana] = 1;
 			system("CLS");
-
+			
 			break;
 		}
 		else
 		{
-			printf("\nlocul %d%c este deja ocupat, va rugam sa selectati altul\n", linie + 1, 65 + coloana);
-			char lin[10], col = ' ';
+			printf("\nlocul %d%c este deja ocupat, va rugam sa selectati altul\n", linie+1, 65 + coloana);
+			char lin[10], col=' ';
 			scanf("%s", lin);
 			if (strcmp(lin, "exit") == 0) exit;
 			scanf(" %c", &col);
-			linie = atoi(lin) - 1;
+			linie = atoi(lin)-1;
 			coloana = col - 65;
 
 		}
@@ -45,7 +45,7 @@ void CSali::select_loc(int& linie, int& coloana)
 	f.open(nume_fisier);
 	f << *this;
 	f.close();
-
+	 
 }
 
 void CSali::select_anulare_loc(int linie, int coloana)
@@ -82,7 +82,7 @@ void CSali::print_situatie_locuri()
 {
 	printf("Total numar locuri=%d\tlocuri disponibile=%d\n", this->nr_total_locuri, this->nr_locuri_disponibile);
 	printf("   ");
-	for (int i = 0; i < 15; i++)
+	for(int i=0;i<15;i++)
 		printf("%c ", 65 + i);
 	printf("\t\t\t Pentru a inchide aplicatia tastati \"exit\"");
 	printf("\n");
@@ -119,7 +119,7 @@ std::ostream& operator<<(std::ostream& os, CSali sala)
 {
 	// TODO: insert return statement here
 	os << sala.nr_total_locuri << " " << sala.nr_locuri_disponibile << endl;;
-	for (int i = 0; i < 10; i++) 
+	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 15; j++)
 			os << sala.locuri[i][j] << " ";

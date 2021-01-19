@@ -6,7 +6,7 @@
 
 using namespace std;
 
-CBilet::CBilet(int col_loc, int linie_loc, int sala, char* ora_rularii, char* nume_film)
+CBilet::CBilet(int col_loc, int linie_loc, int sala, char* ora_rularii,char*nume_film)
 {
 	this->coloana_loc = col_loc;
 	this->linie_loc = linie_loc;
@@ -27,16 +27,16 @@ void CBilet::print_bilet()
 	f.open(id);
 	f << *this;
 	system("CLS");
-	cout << *this;
+	cout <<*this;
 
 }
 std::ostream& operator<<(std::ostream& os, CBilet bilet)
 {
 	// TODO: insert return statement here
-	os << "ID: " << bilet.ID << endl; 
-	os << "Film: " << bilet.nume_film << endl;
+	os << "ID: " << bilet.ID << endl;
+	os <<"Film: " <<bilet.nume_film << endl;
 	char col = bilet.coloana_loc + 65;
-	os << "LOC: " << bilet.linie_loc + 1 << col << endl;
+	os << "LOC: " << bilet.linie_loc+1 << col<< endl;
 	os << "SALA: " << bilet.sala << endl;
 	os << "ORA: " << bilet.ora_rularii;
 	return os;
